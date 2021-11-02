@@ -1,0 +1,56 @@
+﻿/*- - - - - - - - -样式属前导页.html - - - - - - - -*/
+	#Flash{width:1920px;height:731px;position:absolute;top:0px;left:50%;margin-left:-960px;z-index:500;}
+	/*页头*/
+	#header{width:1280px;height:80px;position:absolute;left:50%;margin:0 auto 0 -640px;z-index:1500;}
+		/*网站标志*/
+		#logo{float:left;width:302px;height:204px;position:absolute;left:50%;margin-left:-150px;display:inline;}
+		#logo a{width:100%;height:100%;position:absolute;top:0px;left:0px;}
+		/*菜单*/
+		#menu{float:right;width:1280px;height:76px;margin:4px auto 0px auto;}
+		#menu ul{float:left;width:100%;}
+		#menu ul li{float:left;margin:0 70px 0 30px;display:inline;}
+		#menu ul li:nth-child(3){margin-left:400px;}
+		#menu ul li:nth-child(4){margin-right:0px;}
+		#menu ul li a{float:left;width:145px;height:63px;line-height:31px;text-align:center;font-size:22px;color:#ffeacf;padding-top:12px;background:url("../images/menu_a_bg.jpg"/*tpa=https://www.sr4f.com/images/menu_a_bg.jpg*/) no-repeat left -100px;transition:all 0.2s ease;}
+		#menu ul li.change a,#menu ul li a:hover{color:#523c38;background-position:left 0;}
+		#menu ul li.change span,#menu ul li a:hover span{color:#845944;}
+		#menu ul li a span{line-height:17px;font-size:12px;font-family:'times new roman', times, serif;color:#e34637;display:block;}
+	/**/
+	#bigpic{width:1920px;height:727px;position:relative;min-width:1280px;left:50%;margin:0px auto 15px -960px;}
+	/*公告*/
+	#GongGao{width:803px;height:30px;position:absolute;top:724px;left:50%;margin-left:-640px;background:url("../images/heibg.png"/*tpa=https://www.sr4f.com/images/heibg.png*/) no-repeat left top ;z-index:1600;}
+	#GongGao h5{float:left;width:90px;height:28px;line-height:28px;text-align:center;font-size:14px;color:#ffebb5;background-color:#010002;}
+	#GongGao p{float:left;width:682px;height:30px;line-height:30px;overflow:hidden;font-size:14px;color:#ee9200;padding:0 4px;}
+	#GongGao p a{color:#ff7e00;}
+	#GongGao p a:hover{color:#ffebb5;}
+	/*版本*/
+	#Version{margin:0 auto -247px;width:1280px;position:relative;z-index:1500;}
+	/*页尾*/
+	#footer{height:232px;position:relative;margin:0 auto 0;padding-top:336px;background:url("../images/footerbg.jpg"/*tpa=https://www.sr4f.com/images/footerbg.jpg*/) no-repeat center bottom;}
+	#footer .center{padding-top:24px;}
+	#footer .bomlogo{float:left;width:414px;text-align:center;margin-top:20px;}
+	#footer .tips{color:#734b0d;}
+	#footer .box{float:right;width:660px;line-height:24px;text-align:right;color:#080000;}
+	#footer ul{position:relative;margin:0px -5px 24px 0px;}
+	#footer ul li{display:inline;}
+	#footer ul li a{color:#080000;padding:0 5px;}
+	#footer ul li a:hover{color:#a76800;}
+	#footer p a{font-size:14px;font-family:'times new roman', times, serif;font-weight:bold;color:#754f10;text-decoration:underline;}
+	#footer p a:hover{color:#a76800;}
+	/*新闻列表*/
+	.NewsList li{height:24px;line-height:24px;overflow:hidden;font-size:14px;padding:11px 10px 11px 4px;border-bottom:1px dashed #a09c99;}
+	.NewsList li:last-child{border:0;}
+	.NewsList li:hover{background-color:#efebe7;}
+	.NewsList li span{float:right;font-size:12px;}
+	.NewsList li a:hover{}
+	.NewsList li .btn_fl{color:#fff;margin-right:9px;background-color:#fb9600;display:inline-block;}
+	/*版本*/
+	.Ver{padding:13px 28px;float:left;width:577px;height:500px;position:relative;margin-right:10px;background-color:#ece8e5;border:1px solid #ece8e5;display:inline;}
+	.Ver:hover{border-right-color:#deddd9;border-bottom-color:#deddd9;}
+	.Ver h3{padding:0 8px;height:69px;line-height:69px;font-size:23px;font-weight:normal;margin-bottom:20px;border-bottom:1px solid #cac9c7;}
+	.Ver .photo{margin:0 auto 28px;width:548px;height:219px;position:relative;overflow:hidden;background:#333;display:block;}
+	.Ver .photo span{padding:0 13px;height:50px;line-height:50px;position:absolute;font-size:23px;color:#fff;right:0px;bottom:0px;}
+	.Ver .photo img{width:100%;height:100%;display:block;}
+	.Ver .quicklink{margin:22px 37px 0 0;position:absolute;top:0px;right:0px;}
+	.Ver .quicklink a{margin:0 3px;width:43px;height:43px;line-height:43px;text-align:center;font-size:14px;color:#fff;background-color:#fa9602;border-radius:22px;display:inline-block;}
+	.Ver .quicklink a:hover{background-color:#ffab3d;}

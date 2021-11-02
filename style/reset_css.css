@@ -1,0 +1,72 @@
+﻿/* - - - - - - - - - 各浏览器样式默认值标准化  - - - - - - - - -*/
+html,body,span,object,iframe,h1,h2,h3,h4,h5,p,blockquote,pre,
+a,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,
+fieldset,form,label{
+margin:0;padding:0;border:0;
+font-style:inherit;font-family:inherit;vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,audio,video{margin:0;padding:0;display: block;}
+html{-webkit-text-size-adjust:none;}
+img{border:none;vertical-align:middle;}
+input,select,button{padding:0;margin:0;outline:none;font-family:inherit;vertical-align:middle;}
+textarea{font-family:inherit;padding:0;margin:0;}
+button{cursor:pointer;}
+html{overflow-x:hidden;}
+body{font-size:12px;background-color:#f4f4f4;font-family:'Microsoft YaHei';}
+ul,ol{list-style-type:none;}
+h1{font-size:24px;}
+h2{font-size:18px;}
+h3,h4{font-size:14px;}
+h5{font-size:12px;}
+i,em,address{font-style:normal;}
+a{ text-decoration:none;color:#4f4f4f;}
+a:hover{transition:color 200ms linear 0s,background-color 200ms linear 0s,border-color 200ms linear 0s;color:#ff9600;}
+a:active{}	/*点击与释放时*/
+a:visited{}/* 访问过 */
+/*  - - - - - - - - - 常用类样式  - - - - - - - - -*/
+.photo_fullsize img{display:block;width:100%;height:100%;}	/*图片全尺寸*/
+.no_bor{ border:none!important;}	/*无边框*/
+.no_bg{ background:none!important;}	/*无背景*/
+.clear{ display:block;height:0; line-height:0;overflow:hidden; clear:both;font-size:0;}/*清除浮动*/
+.clear_::after{content:"";display:block; clear:both;height:0; line-height:0; overflow:hidden;}/*清除浮动*/
+.center{margin:0 auto;width:1280px;}	/*让内容区块居中*/
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #fa9602 solid 2px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius:52px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
