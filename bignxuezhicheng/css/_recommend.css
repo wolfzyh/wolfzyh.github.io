@@ -1,0 +1,61 @@
+
+.boss-recommend{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    background-color: #3a1c0c;
+        margin-top: 10px;
+}
+
+.boss-recommend .rec_icon{
+    float: left;
+    width: 42px;
+    height: 38px;
+    background: #cd1d20;
+    color:#fff;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+
+}
+.boss-recommend .rec_icon i{
+    position: absolute;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #cd1d20;
+    right: -10px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+
+.boss-recommend .rec_text{
+    display: block;
+    padding-left: 10px;
+    color: #e8b471;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 20px;
+}
+
+.boss-recommend .rec_text .rec_em{
+    color:#d1a064;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.boss-recommend .rec_text .rec_span{
+    color:#e8b471;
+    font-weight: bold;
+}
+.boss-recommend .rec_text:hover .rec_span{
+    color:#fff;
+    transition: all .1s ease 0s;
+}
+
+
+

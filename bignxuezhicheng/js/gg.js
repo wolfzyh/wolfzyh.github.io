@@ -1,0 +1,18 @@
+document.writeln("<div id=\"1119pk\" style=\"margin: auto;left:0; right:0;bottom:0;position:fixed;text-align:center;z-index:99999;background:#000;filter:alpha(opacity=80);-moz-opacity:0.8;-khtml-opacity:0.8;opacity:0.8;\">");
+document.writeln("<a href=\"..\" target=\"_blank\"><img src=\"../../https@www.dut8.com/xl/images/gg.png\"></a>  ");
+document.writeln("<p onclick=\"removeElement(\'1119pk\')\" ><a style=\"display: block;");
+document.writeln("    position: fixed;");
+document.writeln("    width: 53px;");
+document.writeln("    height: 52px;");
+document.writeln("    -webkit-transition: all 400ms;");
+document.writeln("    z-index: 10000;");
+document.writeln("    right: 50px;");
+document.writeln("    bottom: 20px;\"></a></p> ");
+document.writeln("  ");
+document.writeln("</div>");
+document.writeln("<script type=\"text/javascript\">");
+document.writeln("function removeElement(1119pk)");
+document.writeln("{");
+document.writeln("document.getElementById(1119pk).style.display=\"none\";");
+document.writeln("}");
+document.writeln("</script>");
