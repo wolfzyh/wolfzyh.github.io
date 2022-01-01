@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+/*css reset*/
+HTML {BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; OVERFLOW: hidden; BORDER-RIGHT-WIDTH: 0px;padding:0}
+body,dd,dl,dt,h1,h2,h3,h4,h5,ul,ol,li,p,form,select,input{margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;padding:0}
+ul,li {list-style:none;}
+img {border: none;}
+/*body init*/
+body{min-width:450px;height:358px;font-family: "Microsoft YaHei","Arial","SimSun"; color:#333; font-size:12px;overflow:hidden; background-color: #000}
+/*窗口*/
+*html{background-image:url(about:blank);background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
+/*- - - - - - - - -样式属下载.html - - - - - - - -*/
+#DownloadList{float:left;width:405px;height:358px;position:relative;overflow:hidden;background:#0d0f0e url(bg.jpg) no-repeat ;}
+#DownloadList .info{float:left;width:336px;height:307px;overflow:hidden;padding-left:60px;padding-top:20px;font-family: "Microsoft YaHei"}
+#DownloadList .info p{font-family:微软雅黑;overflow: hidden;line-height:36px;height:34px;font-size:14px;color:#CC0033}
+#DownloadList .info img{margin-top:5px;padding-left:45px;display:inline;}
+.kefu{width:438px;height:30px;padding-left:60px;}
+.kefu li{float:left;width:430px;height:30px;line-height:30px;color:#e7dbc0;margin-bottom:0px;padding-right:30px}
+.kefu li span{float:left;width:180px;line-height:30px;font-size:16px;color:#00c4ee;margin-top:-5px;padding-right:40px}
+.kefu li a{float:left;display:inline;}
+.kefu li a img{margin:0 auto;display:inline;}

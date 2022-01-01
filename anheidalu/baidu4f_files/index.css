@@ -1,0 +1,32 @@
+/*
+
+*/
+@charset "gb2312";
+/* CSS Document */
+* { margin:0; padding:0; }
+body,td,th { font-size: 12px; }
+body { font-size: 12px; font: 75%/150% verdana,ËÎÌו; color: #BF985F; background:url(../images/baidu4f_com_zsimg_bg.jpg) top center no-repeat #191919; margin:0px;}
+
+a { font-size: 12px; color: #BF985F; }
+a:link { text-decoration: none;}
+a:visited { text-decoration: none; color: #BF985F; }
+a:hover { text-decoration: none; color: #FF0000; text-decoration:underline;}
+a:active { text-decoration: none; color: #FF0000;}
+ul {  margin:0 0 0 0; padding: 0; list-style: none; }
+
+.head { margin:0 auto; width:1158px; overflow:hidden;}
+.head_1 { width:1158px; overflow:hidden;}
+
+.flash { margin:0 auto; overflow:hidden;}
+.swf{ width:100%; height:556px; position:absolute; top:0px; left:0;}
+
+.STYLE2 {color: #FF0000}
+.STYLE3 {color: #FFFF00}
+.STYLE4 {color: #CC0000}
+.STYLE5 {color: #66FF00}
+.STYLE6 {color: #FF66FF}
+.STYLE7 {color: #CCFF00}
+.STYLE8 {color: #F8BD45}
+.STYLE9 {color: #FC27A2}
+.STYLE10 {color: #FCCC27}
+.STYLE11 {color: #FF00FF}
